@@ -56,8 +56,6 @@ def main():
     # -------------------------------------------------------------------
     page_selection = st.sidebar.selectbox("Choose Option", page_options)
     if page_selection == "Recommender System":
-        logo = Image.open('resources/imgs/team/logo.png')
-        st.sidebar.image(logo, use_column_width=True)
         # Header contents
         st.write('# Movie Recommender Engine')
         st.write('### EXPLORE Data Science Academy Unsupervised Predict')
@@ -106,6 +104,12 @@ def main():
     # -------------------------------------------------------------------
 
     # ------------- SAFE FOR ALTERING/EXTENSION -------------------
+
+        
+        logo = Image.open('resources/imgs/team/logo.png')
+        st.sidebar.image(logo, use_column_width=True)
+
+        
     if page_selection == "Solution Overview":
         logo = Image.open('resources/imgs/team/logo.png')
         st.sidebar.image(logo, use_column_width=True)
